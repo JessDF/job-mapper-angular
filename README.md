@@ -19,7 +19,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     - Navigate to `http://localhost:4200/`. 
     - The app will automatically reload/compile if you change any of the source files.
 
-## Rendering Components using Angular CLI - Code scaffolding
+## Rendering Components using Angular CLI : Code scaffolding
+- A component controls a patch of screen called a view. https://angular.io/guide/architecture-components
 - In VS Code press: ctrl + ` 
 	- This will open a terminal
 - Generate a new component: `ng g c <new_component_name>`
@@ -29,6 +30,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Documentation states: Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Generating Services using Angular CLI
+- Angular services are singleton objects that get instantiated only once during the lifetime of an application. They contain methods that maintain data throughout the life of an application, i.e. data does not get refreshed and is available all the time. https://angular.io/guide/architecture-services
 - Using a terminal window: `ng g s <new_service_name>`
 	- G = generate
 	- S = service
@@ -40,6 +42,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 	- `--save` adds it as a dependency in package.json
 
 ## Generating Custom Directives using Angular CLI
+- Directives are markers on a DOM element that tell AngularJS to attach a specified behavior to that DOM element or even transform the DOM element and its children. In short, it extends the HTML. Most of the directives in AngularJS are starting with ng- where ng stands for Angular. https://angular.io/guide/architecture-components#directives
 - Using a terminal window: `ng g d <new_directive_name>`
 	- G = generate
 	- d = directive
