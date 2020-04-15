@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-forum.component.css']
 })
 export class SearchForumComponent {
-
+  autocompleteChanged(event){
+    
+  }
 }
