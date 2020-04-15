@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AutocompleteComponent } from '../autocomplete/autocomplete.component';
 
 @Component({
   selector: 'app-search-forum',
@@ -7,5 +6,7 @@ import { AutocompleteComponent } from '../autocomplete/autocomplete.component';
   styleUrls: ['./search-forum.component.css']
 })
 export class SearchForumComponent {
-
+  autocompleteChanged(event){
+    
+  }
 }

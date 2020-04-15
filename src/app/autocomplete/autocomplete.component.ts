@@ -1,9 +1,9 @@
 import { Component, Output, EventEmitter, OnDestroy } from '@angular/core';
-import { MatOptionSelectionChange } from '@angular/material';
 import { Subject, Subscription } from 'rxjs';
 import { FormControl } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import {GeoJSON} from 'geojson';
+import { MatOptionSelectionChange } from '@angular/material/core';
 
 @Component({
   selector: 'app-autocomplete',
