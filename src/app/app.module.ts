@@ -6,15 +6,23 @@ import { SearchForumComponent } from './search-forum/search-forum.component';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button'
-import {MatMenuModule} from '@angular/material/menu';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatToolbarModule,
+  MatMenuModule,
+  MatIconModule,
+  MatButtonModule,
+  MatTableModule,
+  MatDividerModule,
+  MatProgressSpinnerModule,
+  MatInputModule,
+  MatCardModule,
+  MatSlideToggleModule,
+  MatSelectModule,
+  MatOptionModule,MatFormFieldModule} from '@angular/material';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
@@ -28,20 +36,30 @@ import { LoginComponent } from './login/login.component';
     LoginComponent
   ],
   imports: [
-    MatToolbarModule,
-    MatMenuModule,
-    MatButtonModule,
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
     CommonModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatInputModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTableModule,
+    MatDividerModule,
+    MatSlideToggleModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatProgressSpinnerModule,
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
-    ReactiveFormsModule,
     MatAutocompleteModule,
     MatTooltipModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
   ],
   exports: [],
   providers: [],
