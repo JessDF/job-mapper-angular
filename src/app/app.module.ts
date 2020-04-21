@@ -7,21 +7,15 @@ import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
-import {MatTooltipModule} from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule,
-  MatMenuModule,
-  MatIconModule,
-  MatButtonModule,
-  MatTableModule,
-  MatDividerModule,
-  MatProgressSpinnerModule,
-  MatInputModule,
-  MatCardModule,
-  MatSlideToggleModule,
-  MatSelectModule,
-  MatOptionModule,MatFormFieldModule} from '@angular/material';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
@@ -45,21 +39,13 @@ import { LoginComponent } from './login/login.component';
     HttpClientModule,
     MatToolbarModule,
     MatInputModule,
-    MatCardModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
-    MatTableModule,
-    MatDividerModule,
-    MatSlideToggleModule,
-    MatSelectModule,
-    MatOptionModule,
-    MatProgressSpinnerModule,
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
     MatAutocompleteModule,
     MatTooltipModule,
+    MatCardModule,
+    MatButtonModule
   ],
   exports: [],
   providers: [],
