@@ -4,6 +4,14 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
 
 body {
     padding: 20px;
