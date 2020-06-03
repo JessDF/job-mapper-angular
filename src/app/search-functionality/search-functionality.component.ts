@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./search-functionality.component.css']
 })
 
-export class SearchFunctionalityComponent implements OnInit {
+export class SearchFunctionalityComponent {
 
   JobLocation = "UnKnown";
   JobTitle = "UnDefined";
@@ -18,8 +18,4 @@ export class SearchFunctionalityComponent implements OnInit {
       this.JobTitle = params['title'];
     });
   }
-
-  ngOnInit() {
-  }
-
 }
