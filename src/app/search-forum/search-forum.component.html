@@ -1,11 +1,13 @@
 <div class="container">
     <form action="/" #f="ngForm">
-        <app-autocomplete (locationChange)="autocompleteChanged($event)" #location name="location"></app-autocomplete>
+        <app-autocomplete id="autoLoc" #autoLoc name="autoLoc"
+            (locationChange)="autocompleteChanged($event)">
+        </app-autocomplete>
         <br>
         <div class="form-group">
             <label for="jobTitle">Job Title: </label>
             <input ngModel name="jobTitle" id="jobTitle" class="form-control" #jobTitle type="text">
         </div>
-        <input type="submit" value="Search" routerLink="/SearchFunc/{{location}}/{{jobTitle.value}}">
+        <input type="submit" value="Search" routerLink="/SearchFunc/{{autoLoc.inputFieldFormControl.value}}/{{jobTitle.value}}">
     </form>
 </div>

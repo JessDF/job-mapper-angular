@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Component, Output, EventEmitter, OnDestroy, Input } from '@angular/core';
 import { Subject, Subscription } from 'rxjs';
 import { FormControl } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -12,6 +12,7 @@ import { MatOptionSelectionChange } from '@angular/material/core';
 })
 export class AutocompleteComponent implements OnDestroy {
   YOUR_API_KEY = "";
+
   @Output()
   locationChange: EventEmitter<PlaceSuggestion> = new EventEmitter<PlaceSuggestion>();
   searchOptions: Subject<PlaceSuggestion[]> = new Subject<PlaceSuggestion[]>();
@@ -58,7 +59,7 @@ export class AutocompleteComponent implements OnDestroy {
       });
       this.searchOptions.next(placeSuggestions.length ? placeSuggestions : null);
     }, err => {
-      console.log(err);
+      console.log("Error: " + err);
     });
   }
   private generateShortAddress(properties: GeocodingFeatureProperties): string {
