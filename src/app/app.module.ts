@@ -20,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
+import { SearchFunctionalityComponent } from './search-functionality/search-functionality.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LoginComponent } from './login/login.component';
     SearchForumComponent,
     AutocompleteComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    SearchFunctionalityComponent
   ],
   imports: [
     BrowserModule,
